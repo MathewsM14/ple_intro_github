@@ -58,7 +58,7 @@ for(num in a){
     mayor <- num
   }
 }
-cat("El maximo del vector es:", num, "\n")
+cat("El maximo del vector es:", mayor, "\n")
 
 
 # un codigo que ordene un vector de menor a mayor
