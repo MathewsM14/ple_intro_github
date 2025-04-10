@@ -31,18 +31,14 @@ for(vara in a){
 a <- c(3, 2, 4)
 b <- c(1, 2, 3)
 
-longituda <- length(a)
-longitud <- length(b)
 suma <- 0
-producto<- 0
+producto <- 0
 
-rango <- 1:longitud
-if (longitud == longituda){
-  for(i in rango){
+if (length(a) == length(b)){
+  for(i in 1:length(b)){
     producto <- a[i] * b[i]
     suma <- suma + producto
   }
-  
   print(suma)
   
 }else{
