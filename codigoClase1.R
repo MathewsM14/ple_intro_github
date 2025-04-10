@@ -63,22 +63,18 @@ cat("El maximo del vector es:", num, "\n")
 
 # un codigo que ordene un vector de menor a mayor
 
-a <- c(3, 2, 4)
-cont = 1
+a <- c(3, 2, 4, -2, 8, 6)
+n <- length(a)
 
-for(i in 1:length(a)){
-  menor <- a[i]
-  for (num in a){
-    if(num > menor){
-      menor <- num
+for(i in 1:(n-1)){
+  for(j in 1:(n-i)){
+    if(a[j] > a[j+1]){
+      temp <- a[j]
+      a[j] <- a[j+1]
+      a[j+1] <- temp
     }
-    a[cont] = menor
-    cont = cont +1
   }
-
 }
 
 print(a)
-
-
 
