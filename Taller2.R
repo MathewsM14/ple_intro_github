@@ -1,7 +1,8 @@
 
 # 1. un codigo que multiplique los vectores punto a punto y sume los resultados
 
-# Con ciclo for
+# Con ciclo For
+
 a <- c(3, 2, 4)
 b <- c(1, 2, 3)
 
@@ -43,7 +44,8 @@ if (length(a) == length(b)) {
 ##################
 # 2. un codigo que calcule el maximo de un vector
 
-# Con ciclo for
+# Con ciclo For
+
 a <- c(-3, 2, -4)
 
 mayor <- a[1]
