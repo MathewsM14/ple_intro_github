@@ -1,45 +1,4 @@
 
-# Crear el vector de palabras
-words <- c('nombre', 'Pronombres', 'verbo', 'adverbio', 'adjetivo')
-
-# Acceder al quinto elemento (R empieza a contar desde 1)
-words[5]
-
-# Invertir el vector
-rev(words)
-
-# Crear el vector de números
-numbers <- c(1, 3, 5.3)
-
-# Mostrar el vector
-numbers
-
-# Sumar los elementos
-sum(numbers)
-
-# Obtener el tamaño (número de elementos)
-length(numbers)
-
-# Calcular la media
-mean(numbers)
-
-# Contar cuántos elementos son diferentes de cero
-sum(numbers != 0)
-
-# Redondear los números
-round(numbers)
-
-# Suma acumulativa
-cumsum(numbers)
-
-# Asignar el número redondeado a la posición 3
-numbers[3] <- round(numbers[3])
-
-# Mostrar el vector actualizado
-numbers
-
-# Ordenar los números
-sort(numbers)
 
 ################Tablas
 
@@ -105,6 +64,9 @@ conos[[3, 2]]
 conos$Precio[3]
 
 # Cambiar el índice a 'Sabor'
+conos <- conos %>%
+  mutate(Sabor = make.unique(Sabor))
+
 conos_i <- conos %>% column_to_rownames('Sabor')
 
 # Ver el nuevo data frame
@@ -127,6 +89,9 @@ conos$Precio > 5000
 
 # Filtrar filas donde precio > 5000
 conos %>% filter(Precio > 5000)
+
+
+
 
 
 
